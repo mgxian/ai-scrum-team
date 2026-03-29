@@ -1,0 +1,9 @@
+[project]
+name = "ai-scrum-flow"
+version = "0.1.0"
+description = "AI Scrum Team - CrewAI Flow Engine"
+requires-python = ">=3.10"
+dependencies = [
+    "crewai[tools]>=0.100.0",
+    "litellm>=1.0.0",
+]
