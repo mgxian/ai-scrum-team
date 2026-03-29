@@ -1,0 +1,11 @@
+[project]
+name = "ai-scrum-flow-langgraph"
+version = "0.1.0"
+description = "AI Scrum Team - LangGraph Flow Engine"
+requires-python = ">=3.10"
+dependencies = [
+    "langgraph>=0.4.0",
+    "langchain-openai>=0.3.0",
+    "langchain-core>=0.3.0",
+    "litellm>=1.0.0",
+]
