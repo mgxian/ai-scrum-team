@@ -23,5 +23,5 @@ ENV/
 .DS_Store
 Thumbs.db
 
-# Kiro
-.kiro/
+# Kiro — 个人配置忽略，团队共享的提交
+.kiro/settings/

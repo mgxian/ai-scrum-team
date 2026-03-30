@@ -1,0 +1,13 @@
+{
+  "name": "PO Confirmation Watcher",
+  "version": "2.0.0",
+  "description": "监听确认请求，支持 PO 在 IDE 中直接编辑产出物后确认",
+  "when": {
+    "type": "fileCreated",
+    "patterns": ["sprints/*/confirmations/pending/*.json"]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "一个新的 PO 确认请求已创建。请读取该 JSON 文件，展示给用户：\n1. 确认标题、级别、AI 置信度\n2. 关键决策点\n3. 风险提示\n4. 产出物文件链接（用 #File 引用，提示用户可直接点击打开编辑）\n\n告知用户操作选项：\n- 直接回复 approve → 原样通过\n- 先点击产出物链接打开文件修改保存，再回复 approve → 系统自动检测修改，记录为 approve_with_edits\n- 回复 reject: 原因 → 驳回回退给 Agent\n- 回复 partial: 说明 → 部分通过\n\n用户回复后：\n1. 读取 pending JSON 中的 artifact_snapshot 字段\n2. 对比当前产出物文件 hash，检测是否有修改\n3. 将结果写入 resolved 目录，如有修改则 decision 设为 approve_with_edits 并记录 artifact_edits"
+  }
+}
