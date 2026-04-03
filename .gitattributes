@@ -1,0 +1,2 @@
+# 统一换行符，checkout 时自动转换为当前系统格式，commit 时统一为 LF
+* text=auto eol=lf
