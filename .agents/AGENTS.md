@@ -27,7 +27,7 @@ All artifacts stored in repo. Flow Agent passes lightweight trigger signals, eac
 
 ## Skill Organization
 
-Skills in `.agents/skills/` are organized by capability (flat), while source prompt templates in `ba-copilot/`, `arch-copilot/`, etc. are organized by role (hierarchical). Each SKILL.md references the original role-based source files.
+Skills in `.agents/skills/` are organized by role subdirectory (`ba/`, `arch/`, `qa/`, `review/`, `sm/`, `flow/`), mirroring the role-based structure. Source prompt templates live in `ba-copilot/`, `arch-copilot/`, etc. Each SKILL.md references the original source files.
 
 ## Full Documentation
 
