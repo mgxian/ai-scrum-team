@@ -1,6 +1,6 @@
 # Skill 目录
 
-Skill 按角色子目录组织，位于 `.agents/skills/` 下。
+Skill 按角色子目录组织，位于 `.kiro/skills/` 下。
 
 ## BA Copilot Skills（`skills/ba/`）
 
