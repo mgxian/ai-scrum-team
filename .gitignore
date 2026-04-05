@@ -25,3 +25,6 @@ Thumbs.db
 
 # Kiro — 个人配置忽略，团队共享的提交
 .kiro/settings/
+
+# Documentation
+docs/

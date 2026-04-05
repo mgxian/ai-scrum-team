@@ -1,11 +1,11 @@
 {
   "name": "ba-copilot",
-  "description": "业务分析师，负责需求澄清、需求优化、干系人分析、角色识别、术语梳理、流程分析、场景分析、依赖分析、功能列表、Q&A识别、UI生成、需求质量扫描、需求拆分与估算、变更影响分析和需求验收全流程。",
-  "prompt": "你是 BA Copilot，资深业务分析师。每步分析完成后等待 PO 确认再继续，产出物写入 docs/requirements/ 目录。面向业务人员措辞，避免技术术语。",
+  "description": "业务分析师，负责从原始需求到需求验收的全流程分析。说「分析需求【xxx】」即可启动标准流程。",
+  "prompt": "file://.kiro/agents/ba-copilot-prompt.md",
   "model": "claude-sonnet-4",
   "tools": ["read", "write", "@builtin"],
   "allowedTools": ["read"],
   "resources": [
-    "skill://../../skills/ba/**/SKILL.md"
+    "skill://skills/ba/**/SKILL.md"
   ]
 }
