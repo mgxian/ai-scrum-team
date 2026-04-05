@@ -47,8 +47,6 @@ Backlog Refinement → Sprint Planning → Sprint Execution → Sprint Review �
 ├── skills/                    # Skill definitions (source of truth, shared across tools)
 ├── prompts/                   # Prompt source templates organized by role
 ├── .kiro/agents/              # Kiro IDE (.md) + Kiro CLI (.json) agent definitions
-├── .opencode/agent/           # OpenCode agent definitions (.md)
-├── opencode.json              # OpenCode config (instructions referencing skills)
 ├── flow-engines/              # Flow engine implementations + shared code
 │   ├── crewai/               # CrewAI-based flow engine
 │   ├── langgraph/            # LangGraph-based flow engine
@@ -60,13 +58,12 @@ Backlog Refinement → Sprint Planning → Sprint Execution → Sprint Review �
 
 ## Tool Compatibility
 
-This project supports three AI coding tools from a single source of skills:
+This project supports two AI coding tools from a single source of skills:
 
 | Tool | Agent Config | Skills Access |
 |------|-------------|---------------|
 | Kiro IDE | `.kiro/agents/*.md` | `.kiro/skills/` (symlink → `skills/`) |
 | Kiro CLI | `.kiro/agents/*.json` | `skill://` in resources |
-| OpenCode | `.opencode/agent/*.md` | `opencode.json` instructions |
 
 Run `bash scripts/setup.sh` to set up symlinks and verify configuration.
 
@@ -75,7 +72,7 @@ Run `bash scripts/setup.sh` to set up symlinks and verify configuration.
 This repo contains the prompt templates, workflow definitions, and orchestration rules for the AI Scrum Team. To integrate into a real project:
 
 1. Add this repo as a git submodule under `.ai-scrum/`
-2. Run `bash scripts/setup.sh` to set up multi-tool compatibility
+2. Run `bash scripts/setup.sh` to set up compatibility
 3. Create runtime directories (`docs/`, `sprints/`, `knowledge/`) in your project
 4. Configure the CrewAI flow engine (`flow-engines/crewai/`)
 

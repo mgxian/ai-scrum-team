@@ -1,10 +1,9 @@
 #!/usr/bin/env bash
-# Setup script: adapt project structure for Kiro IDE, Kiro CLI, and OpenCode
+# Setup script: adapt project structure for Kiro IDE and Kiro CLI
 #
 # Skills source of truth: skills/ (project root)
 # - Kiro IDE expects skills at .kiro/skills/ → symlink
 # - Kiro CLI uses .kiro/agents/*.json with skill:// resources → direct path
-# - OpenCode uses .opencode/agent/*.md + opencode.json instructions → direct path
 
 set -euo pipefail
 
@@ -30,20 +29,6 @@ else
   exit 1
 fi
 
-# --- OpenCode: verify agent files ---
-if [ -d "$PROJECT_ROOT/.opencode/agent" ]; then
-  AGENT_COUNT=$(find "$PROJECT_ROOT/.opencode/agent" -name "*.md" | wc -l | tr -d ' ')
-  echo "✓ OpenCode: $AGENT_COUNT agent(s) found in .opencode/agent/"
-else
-  echo "⚠ OpenCode: .opencode/agent/ not found, OpenCode agents not available"
-fi
-
-if [ -f "$PROJECT_ROOT/opencode.json" ]; then
-  echo "✓ OpenCode: opencode.json config found"
-else
-  echo "⚠ OpenCode: opencode.json not found, skill instructions not loaded"
-fi
-
 # --- Kiro CLI: verify agent files ---
 if [ -d "$PROJECT_ROOT/.kiro/agents" ]; then
   JSON_COUNT=$(find "$PROJECT_ROOT/.kiro/agents" -name "*.json" | wc -l | tr -d ' ')
@@ -53,4 +38,4 @@ else
 fi
 
 echo ""
-echo "Done. Project is ready for Kiro IDE, Kiro CLI, and OpenCode."
+echo "Done. Project is ready for Kiro IDE and Kiro CLI."
