@@ -27,7 +27,7 @@ All artifacts stored in repo. Flow Agent passes lightweight trigger signals, eac
 
 ## Skill Organization
 
-Skills in `.kiro/skills/` are organized by role subdirectory (`ba/`, `arch/`, `qa/`, `review/`, `sm/`, `flow/`), mirroring the role-based structure. Source prompt templates live in `ba-copilot/`, `arch-copilot/`, etc. Each SKILL.md references the original source files.
+Skills in `skills/` are organized by role subdirectory (`ba/`, `arch/`, `qa/`, `review/`, `sm/`, `flow/`). Agent definitions in `.kiro/agents/` reference these skills. Source prompt templates live in `prompts/ba-copilot/`, `prompts/arch-copilot/`, etc.
 
 ## Full Documentation
 

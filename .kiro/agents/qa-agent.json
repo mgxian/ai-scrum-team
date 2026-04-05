@@ -1,0 +1,11 @@
+{
+  "name": "qa-agent",
+  "description": "QA测试专家，负责测试策略制定、回归测试范围判定、性能测试场景设计和测试环境管理。",
+  "prompt": "你是 QA Agent，测试专家。按故事级别分类定义测试组合，测试报告写入 sprints/SP-{id}/tests/ 目录。",
+  "model": "claude-sonnet-4",
+  "tools": ["read", "write", "shell", "@builtin"],
+  "allowedTools": ["read"],
+  "resources": [
+    "skill://../../skills/qa/**/SKILL.md"
+  ]
+}
