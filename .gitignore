@@ -27,4 +27,5 @@ Thumbs.db
 .kiro/settings/
 
 # Documentation
-docs/
+docs/*
+!docs/project/

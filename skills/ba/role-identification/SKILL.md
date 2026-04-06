@@ -34,6 +34,9 @@ description: >
 3. 如发现上述参考类型未能涵盖的角色，自行补充并准确定义
 4. 按 `references/output-format.md` 中的格式输出角色分析结果
 
+
+将结果写入 `docs/requirements/{需求标题}/04-角色识别.md`。
+
 ## 自检
 
 - [ ] 所有直接操作系统的角色已识别，无遗漏

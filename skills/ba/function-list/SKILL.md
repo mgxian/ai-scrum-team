@@ -34,6 +34,9 @@ description: >
 3. 确保每个子功能是原子的、可测试的
 4. 按 `references/output-format.md` 中的格式输出
 
+
+将结果写入 `docs/requirements/{需求标题}/09-功能列表.md`。
+
 ## 自检
 
 - [ ] 所有场景对应的功能已覆盖

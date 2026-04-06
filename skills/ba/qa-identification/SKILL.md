@@ -66,6 +66,9 @@ description: >
 2. 按九个扫描维度逐一识别缺口、矛盾和歧义
 3. 按 `references/output-format.md` 中的格式输出 Q&A 清单
 
+
+将结果写入 `docs/requirements/{需求标题}/10-QA清单.md`。
+
 ## 自检
 
 - [ ] 所有分析文档已审阅

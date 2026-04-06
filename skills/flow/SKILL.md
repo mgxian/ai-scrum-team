@@ -17,6 +17,10 @@ description: >
 - timeout-handling：超时与异常处理
 - data-contracts：数据传递契约
 
+## 全局输入
+
+- 若项目中存在 `docs/project/README.md`，所有子技能在分析时必须先阅读该文件作为项目背景上下文，确保分析结果贴合项目实际情况。
+
 ## 使用场景
 
 - 需要启动或推进 Sprint 流程时

@@ -38,6 +38,9 @@ description: >
 
 4. 按 `references/output-format.md` 中的格式输出干系人关注点矩阵
 
+
+将结果写入 `docs/requirements/{需求标题}/03-干系人分析.md`。
+
 ## 自检
 
 - [ ] 所有相关干系人类别已覆盖

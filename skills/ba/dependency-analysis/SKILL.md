@@ -57,6 +57,9 @@ description: >
 
 按 `references/output-format.md` 中的格式输出。
 
+
+将结果写入 `docs/requirements/{需求标题}/08-依赖分析.md`。
+
 ## 自检
 
 - [ ] 外部和内部依赖均已识别

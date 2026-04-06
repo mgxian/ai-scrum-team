@@ -71,6 +71,9 @@ description: >
 4. 将多阶段流程拆分为独立流程
 5. 按 `references/output-format.md` 中的格式输出流程清单和 Mermaid 代码
 
+
+将结果写入 `docs/requirements/{需求标题}/06-流程分析.md`。
+
 ## 自检
 
 - [ ] 所有业务流程已识别并正确分类

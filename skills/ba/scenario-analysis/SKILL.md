@@ -93,6 +93,9 @@ description: >
 3. 对每个场景应用场景引导法进行细节分析
 4. 按 `references/output-format.md` 中的格式输出
 
+
+将结果写入 `docs/requirements/{需求标题}/07-场景分析.md`。
+
 ## 自检
 
 - [ ] 所有流程类型的场景已覆盖
