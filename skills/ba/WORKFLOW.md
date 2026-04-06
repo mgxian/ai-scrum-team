@@ -18,81 +18,81 @@
 
 - skill: `ba-requirement-clarification`
 - 输入: 用户提供的原始需求文本
-- 输出: `docs/requirements/{需求标题}/01-需求澄清问卷.md`
+- 输出: `docs/requirements/{规范化需求标题}/01-需求澄清问卷.md`
 - 阻塞原因: 需要 PO 填写问卷后才能继续
 - 本步结束后的回复必须以"请填写以上问卷"结尾，不得包含任何后续分析
-- **用户行动指引**: 告知 PO 打开 `docs/requirements/{需求标题}/01-需求澄清问卷.md`，在表格的「回答」列中填写每题答案，填写完成后回复"问卷已填写"触发下一步
+- **用户行动指引**: 告知 PO 打开 `docs/requirements/{规范化需求标题}/01-需求澄清问卷.md`，在表格的「回答」列中填写每题答案，填写完成后回复"问卷已填写"触发下一步
 
 ### 第 2 步：需求优化 `[确认]`
 
 - skill: `ba-requirement-optimization`
 - 输入: 原始需求 + 第 1 步的问卷回答
 - 前置条件: PO 已回答第 1 步问卷
-- 输出: `docs/requirements/{需求标题}/02-结构化需求文档.md`
-- **用户行动指引**: 告知 PO 审阅 `docs/requirements/{需求标题}/02-结构化需求文档.md`，确认无误后回复"确认"继续，如有修改意见请直接提出
+- 输出: `docs/requirements/{规范化需求标题}/02-结构化需求文档.md`
+- **用户行动指引**: 告知 PO 审阅 `docs/requirements/{规范化需求标题}/02-结构化需求文档.md`，确认无误后回复"确认"继续，如有修改意见请直接提出
 
 ### 第 3 步：干系人识别 `[确认]`
 
 - skill: `ba-stakeholder-analysis`
 - 输入: 第 2 步的结构化需求文档
-- 输出: `docs/requirements/{需求标题}/03-干系人分析.md`
-- **用户行动指引**: 告知 PO 审阅 `docs/requirements/{需求标题}/03-干系人分析.md`，确认无误后回复"确认"继续，如有修改意见请直接提出
+- 输出: `docs/requirements/{规范化需求标题}/03-干系人分析.md`
+- **用户行动指引**: 告知 PO 审阅 `docs/requirements/{规范化需求标题}/03-干系人分析.md`，确认无误后回复"确认"继续，如有修改意见请直接提出
 
 ### 第 4 步：角色识别 `[确认]`
 
 - skill: `ba-role-identification`
 - 输入: 第 2 步的结构化需求文档
-- 输出: `docs/requirements/{需求标题}/04-角色识别.md`
-- **用户行动指引**: 告知 PO 审阅 `docs/requirements/{需求标题}/04-角色识别.md`，确认无误后回复"确认"继续，如有修改意见请直接提出
+- 输出: `docs/requirements/{规范化需求标题}/04-角色识别.md`
+- **用户行动指引**: 告知 PO 审阅 `docs/requirements/{规范化需求标题}/04-角色识别.md`，确认无误后回复"确认"继续，如有修改意见请直接提出
 
 ### 第 5 步：术语梳理 `[确认]`
 
 - skill: `ba-glossary`
 - 输入: 第 2 步的结构化需求文档
-- 输出: `docs/requirements/{需求标题}/05-术语表.md`
-- **用户行动指引**: 告知 PO 审阅 `docs/requirements/{需求标题}/05-术语表.md`，确认无误后回复"确认"继续，如有修改意见请直接提出
+- 输出: `docs/requirements/{规范化需求标题}/05-术语表.md`
+- **用户行动指引**: 告知 PO 审阅 `docs/requirements/{规范化需求标题}/05-术语表.md`，确认无误后回复"确认"继续，如有修改意见请直接提出
 
 ### 第 6 步：流程分析 `[确认]`
 
 - skill: `ba-process-analysis`
 - 输入: 第 2 步的结构化需求文档 + 第 4 步的角色列表
-- 输出: `docs/requirements/{需求标题}/06-流程分析.md`
-- **用户行动指引**: 告知 PO 审阅 `docs/requirements/{需求标题}/06-流程分析.md`，确认无误后回复"确认"继续，如有修改意见请直接提出
+- 输出: `docs/requirements/{规范化需求标题}/06-流程分析.md`
+- **用户行动指引**: 告知 PO 审阅 `docs/requirements/{规范化需求标题}/06-流程分析.md`，确认无误后回复"确认"继续，如有修改意见请直接提出
 
 ### 第 7 步：场景分析 `[确认]`
 
 - skill: `ba-scenario-analysis`
 - 输入: 第 2 步的结构化需求文档 + 第 4 步的角色列表 + 第 6 步的流程分析
-- 输出: `docs/requirements/{需求标题}/07-场景分析.md`
-- **用户行动指引**: 告知 PO 审阅 `docs/requirements/{需求标题}/07-场景分析.md`，确认无误后回复"确认"继续，如有修改意见请直接提出
+- 输出: `docs/requirements/{规范化需求标题}/07-场景分析.md`
+- **用户行动指引**: 告知 PO 审阅 `docs/requirements/{规范化需求标题}/07-场景分析.md`，确认无误后回复"确认"继续，如有修改意见请直接提出
 
 ### 第 8 步：依赖分析 `[确认]`
 
 - skill: `ba-dependency-analysis`
 - 输入: 第 2 步的结构化需求文档
-- 输出: `docs/requirements/{需求标题}/08-依赖分析.md`
-- **用户行动指引**: 告知 PO 审阅 `docs/requirements/{需求标题}/08-依赖分析.md`，确认无误后回复"确认"继续，如有修改意见请直接提出
+- 输出: `docs/requirements/{规范化需求标题}/08-依赖分析.md`
+- **用户行动指引**: 告知 PO 审阅 `docs/requirements/{规范化需求标题}/08-依赖分析.md`，确认无误后回复"确认"继续，如有修改意见请直接提出
 
 ### 第 9 步：功能列表 `[确认]`
 
 - skill: `ba-function-list`
 - 输入: 第 7 步的场景分析 + 第 4 步的角色列表 + 第 2 步的结构化需求文档 + 第 8 步的依赖分析
-- 输出: `docs/requirements/{需求标题}/09-功能列表.md`
-- **用户行动指引**: 告知 PO 审阅 `docs/requirements/{需求标题}/09-功能列表.md`，确认无误后回复"确认"继续，如有修改意见请直接提出
+- 输出: `docs/requirements/{规范化需求标题}/09-功能列表.md`
+- **用户行动指引**: 告知 PO 审阅 `docs/requirements/{规范化需求标题}/09-功能列表.md`，确认无误后回复"确认"继续，如有修改意见请直接提出
 
 ### 第 10 步：Q&A 识别 `[确认]`
 
 - skill: `ba-qa-identification`
 - 输入: 前面所有产出物
-- 输出: `docs/requirements/{需求标题}/10-QA清单.md`
-- **用户行动指引**: 告知 PO 审阅 `docs/requirements/{需求标题}/10-QA清单.md`，确认无误后回复"确认"继续，如有修改意见请直接提出
+- 输出: `docs/requirements/{规范化需求标题}/10-QA清单.md`
+- **用户行动指引**: 告知 PO 审阅 `docs/requirements/{规范化需求标题}/10-QA清单.md`，确认无误后回复"确认"继续，如有修改意见请直接提出
 
 ### 第 11 步：需求质量扫描 `[确认]`
 
 - skill: `ba-quality-scan`
 - 输入: 前面所有产出物
-- 输出: `docs/requirements/{需求标题}/11-质量扫描报告.md`
-- **用户行动指引**: 告知 PO 审阅 `docs/requirements/{需求标题}/11-质量扫描报告.md`，这是最后一步，确认后整个需求分析流程完成
+- 输出: `docs/requirements/{规范化需求标题}/11-质量扫描报告.md`
+- **用户行动指引**: 告知 PO 审阅 `docs/requirements/{规范化需求标题}/11-质量扫描报告.md`，这是最后一步，确认后整个需求分析流程完成
 
 ## 步骤依赖图
 
